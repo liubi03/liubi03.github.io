@@ -10,21 +10,22 @@
 ############################
 
 # Name of website
-title: My website
+title: 我的个人网站
 
 # Your name to show in the footer
-author: Some Person
+author: 网站作者
+locale: zh-CN
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  关于我: "aboutme"
+  资源:
+    - Beautiful Jekyll 主题: "https://beautifuljekyll.com"
+    - 学习 Markdown: "https://www.markdowntutorial.com/"
+  作者主页: "https://deanattali.com"
 
 ################
 # --- Logo --- #
@@ -86,7 +87,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+rss-description: 这是我的个人网站，用来记录想法与分享内容。
 
 ###########################
 # --- General options --- #
@@ -102,7 +103,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "我的个人网站"
 
 # Add the website title to the title of every page
 title-on-all-pages: true
@@ -250,7 +251,7 @@ footer-hover-col: "#0085A1"
 ################
 
 # Ruby Date Format to show dates of posts
-date_format: "%B %-d, %Y"
+date_format: "%Y年%-m月%-d日"
 
 # Facebook App ID
 #fb_app_id: ""

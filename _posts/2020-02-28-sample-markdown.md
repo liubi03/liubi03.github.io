@@ -1,45 +1,44 @@
 ---
 layout: post
-title: Sample blog post to learn markdown tips
-subtitle: There's lots to learn!
+title: 学习 Markdown 写作技巧的示例文章
+subtitle: 还有很多值得学习！
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
-tags: [test]
+tags: [测试]
 comments: true
 mathjax: true
-author: Bill Smith
+author: 比尔·史密斯
 ---
 
 {: .box-success}
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/tables/etc.<br/>I also encourage you to look at the [code that created this post](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/_posts/2020-02-28-sample-markdown.md) to learn some more advanced tips about using markdown in Beautiful Jekyll.
+这是一篇演示文章，用来说明如何通过 Markdown 写博客。我很建议你[花 5 分钟学习 Markdown](https://markdowntutorial.com/)；它会教你把普通文本转换为粗体、斜体、表格等格式。<br/>也建议查看[生成本文的源代码](https://raw.githubusercontent.com/daattali/beautiful-jekyll/master/_posts/2020-02-28-sample-markdown.md)，学习在 Beautiful Jekyll 中使用 Markdown 的更多进阶技巧。
 
-**Here is some bold text**
+**这是一段粗体文字**
 
-## Here is a secondary heading
+## 这是一个二级标题
 
-[This is a link to a different site](https://deanattali.com/) and [this is a link to a section inside this page](#local-urls).
+[这是一个指向其他网站的链接](https://deanattali.com/)，[这是一个指向本文某个章节的链接](#项目站点中的本地链接)。
 
-Here's a table:
+下面是一张表：
 
-| Number | Next number | Previous number |
+| 数字 | 下一个数字 | 上一个数字 |
 | :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
+| 五 | 六 | 四 |
+| 十 | 十一 | 九 |
+| 七 | 八 | 六 |
+| 二 | 三 | 一 |
 
-You can use [MathJax](https://www.mathjax.org/) to write LaTeX expressions. For example:
-When \\(a \ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+你可以使用 [MathJax](https://www.mathjax.org/) 编写 LaTeX 表达式。例如，当 \\(a \ne 0\\) 时，方程 \\(ax^2 + bx + c = 0\\) 有两个解：$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
-How about a yummy crepe?
+来一份可丽饼怎么样？
 
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg)
+![可丽饼](https://beautifuljekyll.com/assets/img/crepe.jpg)
 
-It can also be centered!
+它也可以居中显示！
 
-![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg){: .mx-auto.d-block :}
+![可丽饼](https://beautifuljekyll.com/assets/img/crepe.jpg){: .mx-auto.d-block :}
 
-Here's a code chunk:
+下面是一段代码：
 
 ~~~
 var foo = function(x) {
@@ -48,7 +47,7 @@ var foo = function(x) {
 foo(3)
 ~~~
 
-And here is the same code with syntax highlighting:
+下面是带语法高亮的相同代码：
 
 ```javascript
 var foo = function(x) {
@@ -57,7 +56,7 @@ var foo = function(x) {
 foo(3)
 ```
 
-And here is the same code yet again but with line numbers:
+下面是带行号的相同代码：
 
 {% highlight javascript linenos %}
 var foo = function(x) {
@@ -66,35 +65,35 @@ var foo = function(x) {
 foo(3)
 {% endhighlight %}
 
-## Boxes
-You can add notification, warning and error boxes like this:
+## 提示框
+你可以像下面这样添加通知、警告和错误提示框：
 
-### Notification
+### 通知
 
 {: .box-note}
-**Note:** This is a notification box.
+**提示：** 这是一个通知提示框。
 
-### Warning
+### 警告
 
 {: .box-warning}
-**Warning:** This is a warning box.
+**警告：** 这是一个警告提示框。
 
-### Error
+### 错误
 
 {: .box-error}
-**Error:** This is an error box.
+**错误：** 这是一个错误提示框。
 
-## Local URLs in project sites {#local-urls}
+## 项目站点中的本地链接 {#local-urls}
 
-When hosting a *project site* on GitHub Pages (for example, `https://USERNAME.github.io/MyProject`), URLs that begin with `/` and refer to local files may not work correctly due to how the root URL (`/`) is interpreted by GitHub Pages. You can read more about it [in the FAQ](https://beautifuljekyll.com/faq/#links-in-project-page). To demonstrate the issue, the following local image will be broken **if your site is a project site:**
+当你在 GitHub Pages 上托管*项目站点*（例如 `https://USERNAME.github.io/MyProject`）时，以 `/` 开头并指向本地文件的 URL 可能无法正常工作，因为 GitHub Pages 对根 URL（`/`）的解释有所不同。你可以在[常见问题](https://beautifuljekyll.com/faq/#links-in-project-page)中了解更多。为了演示这个问题，如果你的网站是项目站点，下面这张本地图片将无法显示：
 
-![Crepe](/assets/img/crepe.jpg)
+![可丽饼](/assets/img/crepe.jpg)
 
-If the above image is broken, then you'll need to follow the instructions [in the FAQ](https://beautifuljekyll.com/faq/#links-in-project-page). Here is proof that it can be fixed:
+如果上面的图片无法显示，请按[常见问题](https://beautifuljekyll.com/faq/#links-in-project-page)中的说明操作。下面是修复后的效果：
 
-![Crepe]({{ '/assets/img/crepe.jpg' | relative_url }})
+![可丽饼]({{ '/assets/img/crepe.jpg' | relative_url }})
 
 <details markdown="1">
-<summary>Click here!</summary>
-Here you can see an **expandable** section
+<summary>点击这里！</summary>
+这里是一个**可展开**的章节。
 </details>
