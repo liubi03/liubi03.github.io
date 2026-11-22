@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: 我的个人网站
+title: liubi03
 
 # Your name to show in the footer
-author: 网站作者
+author: liubi03
 locale: zh-CN
 
 ###############################################
@@ -25,7 +25,7 @@ navbar-links:
   资源:
     - Beautiful Jekyll 主题: "https://beautifuljekyll.com"
     - 学习 Markdown: "https://www.markdowntutorial.com/"
-  作者主页: "https://deanattali.com"
+#  作者主页: "https://deanattali.com"
 
 ################
 # --- Logo --- #
@@ -103,7 +103,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "我的个人网站"
+url-pretty: "个人主页"
 
 # Add the website title to the title of every page
 title-on-all-pages: true
