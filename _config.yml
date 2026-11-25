@@ -16,6 +16,9 @@ title: liubi03
 author: liubi03
 locale: zh-CN
 
+# 在文章页显示不蒜子浏览量（依赖第三方统计服务）
+busuanzi_enabled: true
+
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################

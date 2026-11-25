@@ -47,6 +47,12 @@
             {% if page.readtime %}
               {% include readtime.html %}
             {% endif %}
+            {% if site.busuanzi_enabled %}
+              <span class="post-meta">
+                <span class="d-none d-md-inline middot">&middot;</span>
+                浏览 <span id="busuanzi_value_page_pv">--</span> 次
+              </span>
+            {% endif %}
           {% endif %}
         </div>
       </div>
@@ -63,3 +69,7 @@
 {% endif %}
 
 </header>
+
+{% if include.type == "post" and site.busuanzi_enabled %}
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+{% endif %}
